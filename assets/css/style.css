@@ -84,24 +84,30 @@ p {
     box-sizing: border-box;
 }
 
-#menu-main {
-    margin: 0px;
+nav {
     margin-right: -18px;
+}
+
+#menu-main {
+    height: 90px;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 0px;
     list-style-type: none;
     text-align: right;
     font-size: 0px;
 }
 
 #menu-main > li {
-    border-left: thin solid #ddd;
-    display: inline;
     font-size: 16px;
     padding: 0px 18px;
-    line-height: 90px;
+    line-height: 18px;
 }
 
-#menu-main > li:first-child {
-    border-left: 0px;
+#menu-main > li + li {
+    border-left: thin solid #ddd;
 }
 
 #menu-main > li > a {
@@ -149,7 +155,8 @@ p {
     margin: 5px 0px 20px;
 }
 
-#contact-name:hover, #contact-email:hover, #contact-message:hover {
+#contact-name:hover, #contact-email:hover, #contact-message:hover,
+#contact-name:focus, #contact-email:focus, #contact-message:focus {
     border: thin solid #888;   
 }
 
@@ -171,7 +178,7 @@ p {
     cursor: pointer;
 }
 
-#contact-form button:hover {
+#contact-form button:hover, #contact-form button:focus {
     border: 3px double white;
 }
 
