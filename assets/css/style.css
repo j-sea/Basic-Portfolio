@@ -120,7 +120,7 @@ nav {
     text-decoration: underline;
 }
 
-#menu-main > li > a:hover {
+#menu-main > li > a:hover, #menu-main > li > a:focus {
     color: #222;
     text-decoration: underline;
 }
